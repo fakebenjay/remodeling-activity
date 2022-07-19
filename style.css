@@ -151,6 +151,11 @@ svg {
   font-size: 10pt;
 }
 
+.note {
+  width: 100%;
+  padding: 10px 10px;
+}
+
 .gfx-logo {
   display: inline-block;
   width: 30%;
