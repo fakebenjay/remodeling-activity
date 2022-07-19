@@ -1,0 +1,256 @@
+#article {
+  max-width: 640px;
+  /* 800 for A2J, 640 otherwise */
+}
+
+.line {
+  fill: none;
+  stroke-width: 3;
+}
+
+.years {
+  display: flex;
+  font-size: 12pt;
+  width: 100%;
+}
+
+.quit {
+  text-align: center;
+  display: none;
+  cursor: default;
+  height: 0;
+  padding-left: 5px;
+  color: #999;
+  height: 1.2em
+}
+
+.invisible {
+  display: none;
+}
+
+svg {
+  z-index: 10;
+}
+
+.d3-container {
+  text-align: left;
+  width: 100%;
+  line-height: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f3f4
+}
+
+.pulse {
+  background-color: #182538;
+  color: white;
+}
+
+.source {
+  color: black;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pulse-bar {
+  display: block;
+  min-width: 100%;
+  height: 4px;
+  background-color: #D5563A;
+  color: #182538;
+}
+
+.dek {
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 11pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hed {
+  display: block;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16pt;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-tooltip {
+  color: black;
+  overflow: visible;
+  position: absolute;
+  max-width: 250px !important;
+  background-color: #f4f3f4;
+  padding: 0;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  /* border-radius: 10px; */
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 500;
+  font-size: 10pt;
+}
+
+.tooltip-container {
+  margin: 10px;
+}
+
+.box-shadow-right {
+  box-shadow: 3px 3px #000;
+}
+
+.box-shadow-left {
+  box-shadow: -3px 3px #000;
+}
+
+.my-tooltip h2 {
+  font-size: 2em;
+}
+
+.hood {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.stats {
+  margin: 10px 0 0 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.my-tooltip p {
+  margin: 0;
+}
+
+.orange-text {
+  color: #D5563A;
+}
+
+svg {
+  color: #373739;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottom {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.source {
+  display: inline-block;
+  width: 70%;
+  padding: 10px;
+  font-size: 10pt;
+}
+
+.gfx-logo {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  float: left;
+}
+
+.gfx-logo img {
+  width: 100%;
+  overflow: visible;
+}
+
+.chart {
+  padding: 0;
+  margin: 0;
+}
+
+/* basic positioning */
+.legend {
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0;
+  list-style: none;
+}
+
+.legend li {
+  float: left;
+  padding-right: 10px;
+  margin-bottom: 5px;
+  font-size: 12pt;
+}
+
+.legend div {
+  display: inline;
+  border: 1px solid #000 !important;
+  float: left !important;
+  width: 12pt !important;
+  height: 12pt !important;
+  margin: 2px !important;
+}
+
+/* your colors */
+.legend .low div {
+  background-color: #56A9DE;
+}
+
+.legend .moderate div {
+  background-color: #FAA916;
+}
+
+.legend .substantial div {
+  background-color: #ED6A5A;
+}
+
+.legend .high div {
+  background-color: #B01116;
+}
+
+.legend .nodata div {
+  background-color: #C2C1C2;
+}
+
+.legend div {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .quit {
+    float: left;
+    display: inline-block;
+    width: 2%;
+  }
+
+  .my-tooltip {
+    box-sizing: border-box;
+    box-sizing: -webkit-border-box;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
+    position: relative !important;
+    overflow: auto;
+    margin-bottom: 30px;
+    border-radius: 0px !important;
+  }
+
+  .tooltip-container {
+    margin: 10px 20px;
+  }
+
+  .gfx-logo {
+    padding: 0 5px !important;
+  }
+
+  .label {
+    font-size: 10px !important;
+  }
+}
